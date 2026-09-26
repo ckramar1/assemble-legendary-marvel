@@ -1,14 +1,8 @@
 {
-    "version": "1.0.0",
-    "gameInfo": {
-        "name": "Secret Wars Vol. 2 Expansion",
-        "publisher": "Upper Deck"
-    },
     "expansion": {
         "id": "secret_wars_volume_2",
         "name": "Secret Wars Vol. 2",
-        "releaseYear": 2015,
-        "hereos": [
+        "heroes": [
             {
                 "name": "Agent Venom",
                 "team": "Spider Friends",
@@ -23,7 +17,7 @@
                 "name": "Akron the Magnificent",
                 "team": "Unaffiliated",
                 "types": [
-                    "Stength",
+                    "Strength",
                     "Covert",
                     "Instinct"
                 ],
@@ -148,28 +142,190 @@
                 ],
                 "displayName": "Soulsword Colossus"
             },
-             {
+            {
                 "name": "Spider-Gwen",
                 "team": "Spider Friends",
                 "types": [
-                   "Tech",
-                   "Instinct",
-                   "Stength",
-                   "Covert"
+                    "Tech",
+                    "Instinct",
+                    "Strength",
+                    "Covert"
                 ],
                 "displayName": "Spider-Gwen"
             },
-             {
+            {
                 "name": "Time-Traveling Jean Grey",
                 "team": "X-Men",
                 "types": [
-                   "Covert",
-                   "Instinct",
-                   "Ranged"
+                    "Covert",
+                    "Instinct",
+                    "Ranged"
                 ],
                 "displayName": "Time-Traveling Jean Grey"
             }
+        ],
+        "masterminds": [
+            {
+                "name": "Immortal Emperor Zheng-Zhu",
+                "postRandomization": {
+                    "conditionalRules": [
+                        {
+                            "parameter": "numberOfPlayers",
+                            "conditions": {
+                                "2-5": {
+                                    "villains": {
+                                        "forceInclude": [
+                                            "K'un-Lun"
+                                        ],
+                                        "priority": 10
+                                    }
+                                },
+                                "1": {
+                                    "villains": {
+                                        "forceExclude": [
+                                            "K'un-Lun"
+                                        ],
+                                        "priority": 10
+                                    }
+                                }
+                            },
+                            "displayName": "Immortal Emperor Zheng-Zhu"
+                        },
+                        
+                        {
+                            "name": "King Hyperion",
+                            "postRandomization": {
+                                "conditionalRules": [
+                                    {
+                                        "parameter": "numberOfPlayers",
+                                        "conditions": {
+                                            "2-5": {
+                                                "villains": {
+                                                    "forceInclude": [
+                                                        "Utopolis"
+                                                    ],
+                                                    "priority": 10
+                                                }
+                                            },
+                                            "1": {
+                                                "villains": {
+                                                    "forceExclude": [
+                                                        "Utopolis"
+                                                    ],
+                                                    "priority": 10
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "displayName": "King Hyperion"
+                        },
+                        {
+                            "name": "Shiklah, the Demon Bride",
+                            "postRandomization": {
+                                "conditionalRules": [
+                                    {
+                                        "parameter": "numberOfPlayers",
+                                        "conditions": {
+                                            "2-5": {
+                                                "villains": {
+                                                    "forceInclude": [
+                                                        "Monster Metropolis"
+                                                    ],
+                                                    "priority": 10
+                                                }
+                                            },
+                                            "1": {
+                                                "villains": {
+                                                    "forceExclude": [
+                                                        "Monster Metropolis"
+                                                    ],
+                                                    "priority": 10
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "displayName": "Shiklah, the Demon Bride"
+                        },
+                        {
+                            "name": "Spider Queen",
+                            "postRandomization": {
+                                "conditionalRules": [
+                                    {
+                                        "parameter": "numberOfPlayers",
+                                        "conditions": {
+                                            "2-5": {
+                                                "henchman": {
+                                                    "forceInclude": [
+                                                        "Spider-Infected"
+                                                    ],
+                                                    "priority": 10
+                                                }
+                                            },
+                                            "1": {
+                                                "henchman": {
+                                                    "forceExclude": [
+                                                        "Spider-Infected"
+                                                    ],
+                                                    "priority": 10
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "displayName": "Spider Queen"
+                        }
+                    ]
+                }
+            }
+        ],
+        "villains": [
+            {
+                "name": "Deadpool's Secret Wars",
+                "displayName": "Deadpool's Secret Wars"
+            },
+            {
+                "name": "Guardians Of Knowhere",
+                "displayName": "Guardians Of Knowhere"
+            },
+            {
+                "name": "K'un-Lun",
+                "displayName": "K'un-Lun"
+            },
+            {
+                "name": "Monster Metropolis",
+                "displayName": "Monster Metropolis"
+            },
+            {
+                "name": "Spider-Infected",
+                "displayName": "Spider-Infected"
+            },
+            {
+                "name": "Utopolis",
+                "displayName": "Utopolis"
+            },
+            {
+                "name": "X-Men '92",
+                "displayName": "X-Men '92"
+            }
+        ],
+        "henchmen": [
+            {
+                "name": "Spider-Infected",
+                "displayName": "Spider-Infected"
+            },
+            {
+                "name": "Khonshu Guardians",
+                "displayName": "Khonshu Guardians"
+            },
+            {
+                "name": "Magma Men",
+                "displayName": "Magma Men"
+            }
         ]
-        
     }
 }
