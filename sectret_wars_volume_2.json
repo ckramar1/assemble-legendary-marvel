@@ -1,0 +1,175 @@
+{
+    "version": "1.0.0",
+    "gameInfo": {
+        "name": "Secret Wars Vol. 2 Expansion",
+        "publisher": "Upper Deck"
+    },
+    "expansion": {
+        "id": "secret_wars_volume_2",
+        "name": "Secret Wars Vol. 2",
+        "releaseYear": 2015,
+        "hereos": [
+            {
+                "name": "Agent Venom",
+                "team": "Spider Friends",
+                "types": [
+                    "Tech",
+                    "Strength",
+                    "Instinct"
+                ],
+                "displayName": "Agent Venom"
+            },
+            {
+                "name": "Akron the Magnificent",
+                "team": "Unaffiliated",
+                "types": [
+                    "Stength",
+                    "Covert",
+                    "Instinct"
+                ],
+                "displayName": "Akron the Magnificent"
+            },
+            {
+                "name": "Beast",
+                "team": "Illuminati",
+                "types": [
+                    "Strength",
+                    "Tech"
+                ],
+                "displayName": "Beast"
+            },
+            {
+                "name": "Black Swan",
+                "team": "Cabal",
+                "types": [
+                    "Ranged",
+                    "Instinct",
+                    "Covert"
+                ],
+                "displayName": "Black Swan"
+            },
+            {
+                "name": "The Captain and the Devil",
+                "team": "Avengers",
+                "types": [
+                    "Strength",
+                    "Covert",
+                    "Tech",
+                    "Ranged"
+                ],
+                "displayName": "The Captain and the Devil"
+            },
+            {
+                "name": "Captain Britain",
+                "team": "Illuminati",
+                "types": [
+                    "Strength",
+                    "Covert"
+                ],
+                "displayName": "Captain Britain"
+            },
+            {
+                "name": "Corvus Glaive",
+                "team": "Cabal",
+                "types": [
+                    "Strength",
+                    "Instinct",
+                    "Tech"
+                ],
+                "displayName": "Corvus Glaive"
+            },
+            {
+                "name": "Dr. Punisher the Soldier Supreme",
+                "team": "Marvel Knights",
+                "types": [
+                    "Tech",
+                    "Ranged"
+                ],
+                "displayName": "Dr. Punisher the Soldier Supreme"
+            },
+            {
+                "name": "Elas Bloodstone",
+                "team": "S.H.I.E.L.D.",
+                "types": [
+                    "Covert",
+                    "Instinct",
+                    "Tech",
+                    "Strength",
+                    "Ranged"
+                ],
+                "displayName": "Elas Bloodstone"
+            },
+            {
+                "name": "Pheonix Force Cyclops",
+                "team": "X-Men",
+                "types": [
+                    "Ranged",
+                    "Covert",
+                    "Instinct"
+                ],
+                "displayName": "Pheonix Force Cyclops"
+            },
+            {
+                "name": "Ruby Summers",
+                "team": "X-Men",
+                "types": [
+                    "Strength",
+                    "Ranged"
+                ],
+                "displayName": "Ruby Summers"
+            },
+            {
+                "name": "Shang-Chi",
+                "team": "Marvel Knights",
+                "types": [
+                    "Instinct",
+                    "Covert"
+                ],
+                "displayName": "Shang-Chi"
+            },
+            {
+                "name": "Silk",
+                "team": "Spider Friends",
+                "types": [
+                    "Ranged",
+                    "Strength",
+                    "Instinct",
+                    "Tech"
+                ],
+                "displayName": "Silk"
+            },
+            {
+                "name": "Soulsword Colossus",
+                "team": "X-Men",
+                "types": [
+                    "Covert",
+                    "Strength",
+                    "Instinct"
+                ],
+                "displayName": "Soulsword Colossus"
+            },
+             {
+                "name": "Spider-Gwen",
+                "team": "Spider Friends",
+                "types": [
+                   "Tech",
+                   "Instinct",
+                   "Stength",
+                   "Covert"
+                ],
+                "displayName": "Spider-Gwen"
+            },
+             {
+                "name": "Time-Traveling Jean Grey",
+                "team": "X-Men",
+                "types": [
+                   "Covert",
+                   "Instinct",
+                   "Ranged"
+                ],
+                "displayName": "Time-Traveling Jean Grey"
+            }
+        ]
+        
+    }
+}
