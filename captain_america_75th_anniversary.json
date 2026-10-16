@@ -1,0 +1,172 @@
+{
+    "expansion": {
+        "id": "Captain_America_75th_Anniversary",
+        "name": "Captain America 75th Anniversary",
+        "heroes": [
+            {
+                "name": "Agent X-13",
+                "team": "S.H.I.E.L.D.",
+                "types": [
+                    "Ranged",
+                    "Covert",
+                    "Instinct",
+                    "Tech"
+                ],
+                "displayName": "Agent X-13"
+            },
+            {
+                "name": "Captain America Falcon",
+                "team": "Avengers",
+                "types": [
+                    "Instinct",
+                    "Ranged",
+                    "Tech",
+                    "Covert"
+                ],
+                "displayName": "Captain America Falcon"
+            },
+            {
+                "name": "Captain America 1941",
+                "team": "Avengers",
+                "types": [
+                    "Instinct",
+                    "Covert",
+                    "Strength",
+                    "Tech"
+                ],
+                "displayName": "Captain America 1941"
+            },
+            {
+                "name": "Steve Rogers, Director of S.H.I.E.L.D.",
+                "team": "S.H.I.E.L.D.",
+                "types": [
+                    "Instinct",
+                    "Covert",
+                    "Tech",
+                    "Strength"
+                ],
+                "displayName": "Steve Rogers, Director of S.H.I.E.L.D."
+            },
+            {
+                "name": "Winter Soldier",
+                "team": "Unaffiliated",
+                "types": [
+                    "Covert",
+                    "Tech",
+                    "Strength"
+                ],
+                "displayName": "Winter Soldier"
+            }
+        ],
+        "masterminds": [
+            {
+                "name": "Arnnim Zola",
+                "postRandomization": {
+                    "conditionalRules": [
+                        {
+                            "parameter": "numberOfPlayers",
+                            "conditions": {
+                                "2-5": {
+                                    "villains": {
+                                        "forceInclude": [
+                                            "Zola's Creations"
+                                        ],
+                                        "priority": 10
+                                    }
+                                },
+                                "1": {
+                                    "villains": {
+                                        "forceExclude": [
+                                            "Zola's Creations"
+                                        ],
+                                        "priority": 10
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "displayName": "Arnim Zola"
+            },
+            {
+                "name": "Baron Heinrich Zemo",
+                "postRandomization": {
+                    "conditionalRules": [
+                        {
+                            "parameter": "numberOfPlayers",
+                            "conditions": {
+                                "2-5": {
+                                    "villains": {
+                                        "forceInclude": [
+                                            "Masters of Evil (WWII)"
+                                        ],
+                                        "priority": 10
+                                    }
+                                },
+                                "1": {
+                                    "villains": {
+                                        "forceExclude": [
+                                            "Masters of Evil (WWII)"
+                                        ],
+                                        "priority": 10
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "displayName": "Baron Heinrich Zemo"
+            }
+        ],
+        "villains": [
+            {
+                "name": "Zola's Creations",
+                "displayName": "Zola's Creations"
+            },
+            {
+                "name": "Masters of Evil (WWII)",
+                "displayName": "Masters of Evil (WWII)"
+            }
+        ],
+        "schemes": [
+            {
+                "name": "The Unbreakable Enigma Code",
+                "schemeTwists": 6,
+                "displayName": "The Unbreakable Enigma Code"
+            },
+            {
+                "name": "Change the Outcome of World War II",
+                "schemeTwists": 7,
+                "postRandomization": {
+                    "villains": {
+                        "addExtra": 1
+                    }
+                },
+                "displayName": "Change the Outcome of World War II"
+            },
+            {
+                "name": "Go Back in Time to Slay Heroes' Ancestors",
+                "schemeTwists": 9,
+                "postRandomization": {
+                    "schemeTwists": 7,
+                    "heroes": {
+                        "set": {
+                            "count": 7
+                        }
+                    }
+                },
+                "displayName": "Go Back in Time to Slay Heroes' Ancestors"
+            },
+            {
+                "name": "Brainwash the Military",
+                "schemeTwists": 7,
+                "postRandomization": {
+                    "notes": [
+                        "Add 12 S.H.I.E.L.D. Officers to the Villain Deck"
+                    ]
+                },
+                "displayName": "Brainwash the Military"
+            }
+        ]
+    }
+}
