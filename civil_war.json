@@ -1,0 +1,428 @@
+{
+    "expansion": {
+        "id": "civil_war",
+        "name": "Civil War",
+        "heroes": [
+            {
+                "name": "Captain America, Secret Avenger",
+                "team": "Avengers",
+                "types": [
+                    "Covert",
+                    "Instinct",
+                    "Ranged",
+                    "Tech"
+                ],
+                "displayName": "Captain America, Secret Avenger"
+            },
+            {
+                "name": "Cloak & Dagger",
+                "team": "Marvel Knights",
+                "types": [
+                    "Ranged"
+                ],
+                "displayName": "Cloak & Dagger"
+            },
+            {
+                "name": "Daredevil_civil_war",
+                "team": "Avengers",
+                "types": [
+                    "Instinct",
+                    "Covert",
+                    "Strength"
+                ],
+                "displayName": "Daredevil"
+            },
+            {
+                "name": "Falcon",
+                "team": "Avengers",
+                "types": [
+                    "Tech",
+                    "Instinct",
+                    "Ranged"
+                ],
+                "displayName": "Falcon"
+            },
+            {
+                "name": "Goliath",
+                "team": "Avengers",
+                "types": [
+                    "Strength",
+                    "Tech"
+                ],
+                "displayName": "Goliath"
+            },
+            {
+                "name": "Hercules",
+                "team": "Avengers",
+                "types": [
+                    "Strength",
+                    "Instinct",
+                    "Tech"
+                ],
+                "displayName": "Hercules"
+            },
+            {
+                "name": "Hulking",
+                "team": "Avengers",
+                "types": [
+                    "Strength",
+                    "Covert"
+                ],
+                "displayName": "Hulking"
+            },
+            {
+                "name": "Luke Cage",
+                "team": "Avengers",
+                "types": [
+                    "Strength",
+                    "Instinct"
+                ],
+                "displayName": "Luke Cage"
+            },
+            {
+                "name": "Patriot",
+                "team": "Avengers",
+                "types": [
+                    "Strength",
+                    "Instinct",
+                    "Tech"
+                ],
+                "displayName": "Patriot"
+            },
+            {
+                "name": "Peter Parker",
+                "team": "Avengers",
+                "types": [
+                    "Instinct",
+                    "Tech"
+                ],
+                "displayName": "Peter Parker"
+            },
+            {
+                "name": "Speedball",
+                "team": "New Warriors",
+                "types": [
+                    "Ranged",
+                    "Covert",
+                    "Ranged"
+                ],
+                "displayName": "Speedball"
+            },
+            {
+                "name": "Stature",
+                "team": "Avengers",
+                "types": [
+                    "Strength",
+                    "Tech"
+                ],
+                "displayName": "Stature"
+            },
+            {
+                "name": "Storm, & Black Panther",
+                "team": "Avengers",
+                "types": [
+                    "Instinct",
+                    "Tech",
+                    "Covert"
+                ],
+                "displayName": "Storm, & Black Panther"
+            },
+            {
+                "name": "Tigra",
+                "team": "Avengers",
+                "types": [
+                    "Instinct",
+                    "Covert"
+                ],
+                "displayName": "Tigra"
+            },
+            {
+                "name": "Vision",
+                "team": "Avengers",
+                "types": [
+                    "Tech",
+                    "Ranged"
+                ],
+                "displayName": "Vision"
+            },
+            {
+                "name": "Wiccan",
+                "team": "Avengers",
+                "types": [
+                    "Covert",
+                    "Ranged"
+                ],
+                "displayName": "Wiccan"
+            }
+        ],
+        "masterminds": [
+            {
+                "name": "Authoritarian Iron Man",
+                "postRandomization": {
+                    "conditionalRules": [
+                        {
+                            "parameter": "numberOfPlayers",
+                            "conditions": {
+                                "2-5": {
+                                    "villains": {
+                                        "forceInclude": [
+                                            "Superhuman Registration Act"
+                                        ],
+                                        "priority": 10
+                                    }
+                                },
+                                "1": {
+                                    "villains": {
+                                        "forceExclude": [
+                                            "Superhuman Registration Act"
+                                        ],
+                                        "priority": 10
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "displayName": "Authoritarian Iron Man"
+            },
+            {
+                "name": "Baron Helmut Zemo",
+                "postRandomization": {
+                    "conditionalRules": [
+                        {
+                            "parameter": "numberOfPlayers",
+                            "conditions": {
+                                "2-5": {
+                                    "villains": {
+                                        "forceInclude": [
+                                            "Thunderbolts"
+                                        ],
+                                        "priority": 10
+                                    }
+                                },
+                                "1": {
+                                    "villains": {
+                                        "forceExclude": [
+                                            "Thunderbolts"
+                                        ],
+                                        "priority": 10
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "displayName": "Baron Helmut Zemo"
+            },
+            {
+                "name": "Maria Hill, Director of S.H.I.E.L.D.",
+                "postRandomization": {
+                    "conditionalRules": [
+                        {
+                            "parameter": "numberOfPlayers",
+                            "conditions": {
+                                "2-5": {
+                                    "villains": {
+                                        "forceInclude": [
+                                            "S.H.I.E.L.D. Elite"
+                                        ],
+                                        "priority": 10
+                                    }
+                                },
+                                "1": {
+                                    "villains": {
+                                        "forceExclude": [
+                                            "S.H.I.E.L.D. Elite"
+                                        ],
+                                        "priority": 10
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "displayName": "Maria Hill, Director of S.H.I.E.L.D."
+            },
+            {
+                "name": "Misty Knight",
+                "postRandomization": {
+                    "conditionalRules": [
+                        {
+                            "parameter": "numberOfPlayers",
+                            "conditions": {
+                                "2-5": {
+                                    "villains": {
+                                        "forceInclude": [
+                                            "Heroes for Hire"
+                                        ],
+                                        "priority": 10
+                                    }
+                                },
+                                "1": {
+                                    "villains": {
+                                        "forceExclude": [
+                                            "Heroes for Hire"
+                                        ],
+                                        "priority": 10
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "displayName": "Misty Knight"
+            },
+            {
+                "name": "Ragnarok",
+                "postRandomization": {
+                    "conditionalRules": [
+                        {
+                            "parameter": "numberOfPlayers",
+                            "conditions": {
+                                "2-5": {
+                                    "villains": {
+                                        "forceInclude": [
+                                            "Registration Enforcers"
+                                        ],
+                                        "priority": 10
+                                    }
+                                },
+                                "1": {
+                                    "villains": {
+                                        "forceExclude": [
+                                            "Registration Enforcers"
+                                        ],
+                                        "priority": 10
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "displayName": "Ragnarok"
+            }
+        ],
+        "villains": [
+            {
+                "name": "Superhuman Registration Act",
+                "displayName": "Superhuman Registration Act"
+            },
+            {
+                "name": "Thunderbolts",
+                "displayName": "Thunderbolts"
+            },
+            {
+                "name": "S.H.I.E.L.D. Elite",
+                "displayName": "S.H.I.E.L.D. Elite"
+            },
+            {
+                "name": "Heroes for Hire",
+                "displayName": "Heroes for Hire"
+            },
+            {
+                "name": "Registration Enforcers",
+                "displayName": "Registration Enforcers"
+            },
+            {
+                "name": "CSA Special Marshals",
+                "displayName": "CSA Special Marshals"
+            },
+            {
+                "name": "Great Lake Avengers",
+                "displayName": "Great Lake Avengers"
+            }
+        ],
+        "henchmen": [
+            {
+                "name": "Cape-Killers and Mandroid",
+                "displayName": "Cape-Killers and Mandroid"
+            }
+        ],
+        "schemes": [
+            {
+                "name": "Darl Reign of H.A.M.M.E.R. Officers",
+                "schemeTwists": 7,
+                "displayName": "Darl Reign of H.A.M.M.E.R. Officers"
+            },
+            {
+                "name": "Imprison Unregistered Superhumans",
+                "schemeTwists": 11,
+                "displayName": "Imprison Unregistered Superhumans"
+            },
+            {
+                "name": "Nitro the Supervillain Threatens Crowds",
+                "schemeTwists": 8,
+                "displayName": "Nitro the Supervillain Threatens Crowds"
+            },
+            {
+                "name": "United States Split by Civil War",
+                "schemeTwists": 10,
+                "displayName": "United States Split by Civil War"
+            },
+            {
+                "name": "Avengers_vs_X_Men",
+                "postRandomization": {
+                    "schemeTwists": 9,
+                    "notes": [
+                        "Hero Deck has 3 Heroes of one Team and 3 Heroes of another Team."
+                    ],
+                    "heroes": {
+                        "set": {
+                            "count": 6
+                        }
+                    }
+                },
+                "displayName": "Avengers vs. X-Men"
+            },
+            {
+                "name": "Epic_Super_Hero_Civil_War",
+                "displayName": "Epic Super Hero Civil War",
+                "postRandomization": {
+                    "conditionalRules": [
+                        {
+                            "parameter": "numberOfPlayers",
+                            "conditions": {
+                                "1": {
+                                    "schemeTwists": 9,
+                                    "heroes": {
+                                        "set": {
+                                            "count": 4
+                                        }
+                                    }
+                                },
+                                "2-3": {
+                                    "schemeTwists": 9
+                                },
+                                "4-5": {
+                                    "schemeTwists": 6
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Predict_Future_Crime",
+                "displayName": "Predict Future Crime",
+                "postRandomization": {
+                    "schemeTwists": 6,
+                    "villains": {
+                        "addExtra": 1
+                    }
+                }
+            },
+            {
+                "name": "Reveal_Heroes_Secret_Identities",
+                "displayName": "Reveal Heroes' Secret Identities",
+                "postRandomization": {
+                    "schemeTwists": 6,
+                    "heroes": {
+                        "set": {
+                            "count": 7
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}
