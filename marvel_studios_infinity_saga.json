@@ -1,0 +1,213 @@
+{
+  "expansion": {
+    "id": "marvel_studios_infinity_saga",
+    "name": "Marvel Studios The Infinity Saga",
+    "heroes": [
+      {
+        "name": "Black_Panther_Infinity_Saga",
+        "displayName": "Black Panther",
+        "team": "Avengers",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Bruce_Banner_Infinity_Saga",
+        "displayName": "Bruce Banner",
+        "team": "Avengers",
+        "types": [
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Captain_Marvel_Infinity_Saga",
+        "displayName": "Captain Marvel",
+        "team": "Avengers",
+        "types": [
+          "Ranged",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Doctor_Strange_Infinity_Saga",
+        "displayName": "Doctor Strange",
+        "team": "Avengers",
+        "types": [
+          "Instinct",
+          "Ranged"
+        ]
+      },
+      {
+        "name": "Wanda_And_Vision_Infinity_Saga",
+        "displayName": "Wanda & Vision",
+        "team": "Avengers",
+        "types": [
+          "Covert",
+          "Ranged",
+          "Tech"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Ebony_Maw_Infinity_Saga",
+        "displayName": "Ebony Maw",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Children_Of_Thanos_Infinity_Saga"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Children_Of_Thanos_Infinity_Saga"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Thanos_Infinity_Saga",
+        "displayName": "Thanos",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Infinity_Stones_Infinity_Saga"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Infinity_Stones_Infinity_Saga"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Children_Of_Thanos_Infinity_Saga",
+        "displayName": "Children Of Thanos"
+      },
+      {
+        "name": "Infinity_Stones_Infinity_Saga",
+        "displayName": "Infinity Stones"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Halve_All_Life_In_The_Universe_Infinity_Saga",
+        "displayName": "Halve All Life In The Universe",
+        "postRandomization": {
+          "schemeTwists": 5
+        }
+      },
+      {
+        "name": "Sacrifice_For_The_Soul_Stone_Infinity_Saga",
+        "displayName": "Sacrifice For The Soul Stone",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 5
+                },
+                "2": {
+                  "schemeTwists": 6
+                },
+                "3": {
+                  "schemeTwists": 7
+                },
+                "4": {
+                  "schemeTwists": 8
+                },
+                "5": {
+                  "schemeTwists": 9
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "The_Time_Heist_Infinity_Saga",
+        "displayName": "The Time Heist",
+        "postRandomization": {
+          "schemeTwists": 11,
+          "heroes": {
+            "set": {
+              "count": 4
+            }
+          },
+          "dynamicNotes": [
+            {
+              "template": "Use 4 Heroes in the Hero Deck, plus 4 other Heroes ({pastHero1}, {pastHero2}, {pastHero3}, {pastHero4}) to make a \"Past Hero Deck.\" Above the board, make room for an alternate city called \"The Past.\" It has the normal 5 spaces, from Sewers to Bridge.",
+              "variables": {
+                "pastHero1": {
+                  "type": "randomUnusedElementOfType",
+                  "elementType": "heroes"
+                },
+                "pastHero2": {
+                  "type": "randomUnusedElementOfType",
+                  "elementType": "heroes"
+                },
+                "pastHero3": {
+                  "type": "randomUnusedElementOfType",
+                  "elementType": "heroes"
+                },
+                "pastHero4": {
+                  "type": "randomUnusedElementOfType",
+                  "elementType": "heroes"
+                }
+              }
+            },
+            {
+              "template": "The Past has its own \"Past HQ\" filled by the \"Past Hero Deck.\" To start, play as if \"The Past\" city, HQ, and Hero Deck don't exist.",
+              "variables": {}
+            }
+          ]
+        }
+      },
+      {
+        "name": "Warp_Reality_Into_A_TV_Show_Infinity_Saga",
+        "displayName": "Warp Reality Into A TV Show",
+        "postRandomization": {
+          "schemeTwists": 11,
+          "notes": [
+            "The rightmost city space represents a TV show from \"the 50s.\" The space on its left is \"the 60s,\" then \"the 70s.\" The city is only those 3 spaces. The HQ is only the 3 spaces beneath those. Move the Mastermind & Officer Deck to mark the city's left edge."
+          ]
+        }
+      }
+    ]
+  }
+}

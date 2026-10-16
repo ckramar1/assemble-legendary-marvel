@@ -1,0 +1,238 @@
+{
+  "expansion": {
+    "id": "marvel_studios_guardians_of_the_galaxy",
+    "name": "Marvel Studios Guardians of the Galaxy",
+    "heroes": [
+      {
+        "name": "Star_Lord_Marvel_Studios",
+        "displayName": "Star-Lord",
+        "team": "Guardians Of The Galaxy",
+        "types": [
+          "Covert",
+          "Ranged",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Gamora_Marvel_Studios",
+        "displayName": "Gamora",
+        "team": "Guardians Of The Galaxy",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Rocket_And_Groot_Marvel_Studios",
+        "displayName": "Rocket & Groot",
+        "team": "Guardians Of The Galaxy",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Drax_Marvel_Studios",
+        "displayName": "Drax",
+        "team": "Guardians Of The Galaxy/Unaffiliated",
+        "types": [
+          "Instinct",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Mantis_Marvel_Studios",
+        "displayName": "Mantis",
+        "team": "Guardians Of The Galaxy/Unaffiliated",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Ronan_The_Accuser_Marvel_Studios",
+        "displayName": "Ronan The Accuser",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Followers_Of_Ronan_Marvel_Studios"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Followers_Of_Ronan_Marvel_Studios"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ego_The_Living_Planet_Marvel_Studios",
+        "displayName": "Ego, The Living Planet",
+        "postRandomization": {
+          "villains": {
+            "addExtra": 1,
+            "priority": 20
+          }
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Followers_Of_Ronan_Marvel_Studios",
+        "displayName": "Followers Of Ronan"
+      },
+      {
+        "name": "Ravagers_Marvel_Studios",
+        "displayName": "Ravagers"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Inescapable_Kyln_Space_Prison_Marvel_Studios",
+        "displayName": "Inescapable \"Kyln\" Space Prison",
+        "postRandomization": {
+          "schemeTwists": 8,
+          "villains": {
+            "addExtra": 1
+          }
+        }
+      },
+      {
+        "name": "Provoke_The_Sovereign_War_Fleet_Marvel_Studios",
+        "displayName": "Provoke The Sovereign War Fleet",
+        "postRandomization": {
+          "schemeTwists": 11,
+          "villains": {
+            "addExtra": 1
+          }
+        }
+      },
+      {
+        "name": "Star_Lords_Awesome_Mix_Tape_Marvel_Studios",
+        "displayName": "Star-Lord's Awesome Mix Tape",
+        "postRandomization": {
+          "schemeTwists": 7,
+          "heroes": {
+            "set": {
+              "count": 7
+            }
+          },
+          "notes": [
+            "Include at least one Guardians of the Galaxy Hero.",
+            "Use only half the cards from each of those groups, randomly & secretly."
+          ],
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "set": {
+                      "count": 2
+                    },
+                    "priority": 5
+                  },
+                  "henchmen": {
+                    "set": {
+                      "count": 2
+                    },
+                    "priority": 5
+                  },
+                  "notes": [
+                    "1 player: 2 Henchmen per group."
+                  ]
+                },
+                "2": {
+                  "villains": {
+                    "set": {
+                      "count": 4
+                    },
+                    "priority": 5
+                  },
+                  "henchmen": {
+                    "set": {
+                      "count": 2
+                    },
+                    "priority": 5
+                  }
+                },
+                "3": {
+                  "villains": {
+                    "set": {
+                      "count": 6
+                    },
+                    "priority": 5
+                  },
+                  "henchmen": {
+                    "set": {
+                      "count": 2
+                    },
+                    "priority": 5
+                  }
+                },
+                "4": {
+                  "villains": {
+                    "set": {
+                      "count": 6
+                    },
+                    "priority": 5
+                  },
+                  "henchmen": {
+                    "set": {
+                      "count": 4
+                    },
+                    "priority": 5
+                  }
+                },
+                "5": {
+                  "villains": {
+                    "set": {
+                      "count": 8
+                    },
+                    "priority": 5
+                  },
+                  "henchmen": {
+                    "set": {
+                      "count": 4
+                    },
+                    "priority": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Unleash_The_Abilisk_Space_Monster_Marvel_Studios",
+        "displayName": "Unleash The Abilisk Space Monster",
+        "postRandomization": {
+          "schemeTwists": 9
+        }
+      }
+    ]
+  }
+}

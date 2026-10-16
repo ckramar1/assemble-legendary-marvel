@@ -1,0 +1,565 @@
+{
+  "expansion": {
+    "id": "core_2nd_edition",
+    "name": "Core 2nd Edition",
+    "heroes": [
+      {
+        "name": "Black_Widow_2E",
+        "displayName": "Black Widow",
+        "team": "Avengers",
+        "types": [
+          "Covert",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Captain_America_2E",
+        "displayName": "Captain America",
+        "team": "Avengers",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Cyclops_2E",
+        "displayName": "Cyclops",
+        "team": "X-Men",
+        "types": [
+          "Ranged",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Emma_Frost_2E",
+        "displayName": "Emma Frost",
+        "team": "X-Men",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Gambit_2E",
+        "displayName": "Gambit",
+        "team": "X-Men",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged"
+        ]
+      },
+      {
+        "name": "Hawkeye_2E",
+        "displayName": "Hawkeye",
+        "team": "Avengers",
+        "types": [
+          "Ranged",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Hulk_2E",
+        "displayName": "Hulk",
+        "team": "Avengers",
+        "types": [
+          "Instinct",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Iron_Man_2E",
+        "displayName": "Iron Man",
+        "team": "Avengers",
+        "types": [
+          "Ranged",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Nick_Fury_2E",
+        "displayName": "Nick Fury",
+        "team": "S.H.I.E.L.D.",
+        "types": [
+          "Covert",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Rogue_2E",
+        "displayName": "Rogue",
+        "team": "X-Men",
+        "types": [
+          "Covert",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Spider-Man_2E",
+        "displayName": "Spider-Man",
+        "team": "Spider Friends",
+        "types": [
+          "Instinct",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Spider-Man_Miles_Morales_2E",
+        "displayName": "Spider-Man (Miles Morales)",
+        "team": "Spider Friends",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Storm_2E",
+        "displayName": "Storm",
+        "team": "X-Men",
+        "types": [
+          "Covert",
+          "Ranged"
+        ]
+      },
+      {
+        "name": "Thor_2E",
+        "displayName": "Thor",
+        "team": "Avengers",
+        "types": [
+          "Ranged",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Wolverine_2E",
+        "displayName": "Wolverine",
+        "team": "X-Men",
+        "types": [
+          "Instinct"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Doctor_Doom_2E",
+        "displayName": "Doctor Doom",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "henchmen": {
+                    "forceExclude": [
+                      "Doombot_Legion_2E"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "henchmen": {
+                    "forceInclude": [
+                      "Doombot_Legion_2E"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Doctor_Octopus_2E",
+        "displayName": "Doctor Octopus",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExcludeMatching": {
+                      "matching": [
+                        "Sinister"
+                      ]
+                    },
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceIncludeMatching": {
+                      "matching": [
+                        "Sinister"
+                      ]
+                    },
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Loki_2E",
+        "displayName": "Loki",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Enemies_Of_Asgard_2E"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Enemies_Of_Asgard_2E"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Magneto_2E",
+        "displayName": "Magneto",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExcludeMatching": {
+                      "matching": [
+                        "Brotherhood",
+                        "X-Men"
+                      ]
+                    },
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceIncludeMatching": {
+                      "matching": [
+                        "Brotherhood",
+                        "X-Men"
+                      ]
+                    },
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Red_Skull_Hydra_Overlord_2E",
+        "displayName": "Red Skull, Hydra Overlord",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExcludeMatching": {
+                      "matching": [
+                        "HYDRA", "Hydra"
+                      ]
+                    },
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceIncludeMatching": {
+                      "matching": [
+                        "HYDRA", "Hydra"
+                      ]
+                    },
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Brotherhood_Of_Mutants_2E",
+        "displayName": "Brotherhood Of Mutants"
+      },
+      {
+        "name": "Enemies_Of_Asgard_2E",
+        "displayName": "Enemies Of Asgard"
+      },
+      {
+        "name": "Hydra_2E",
+        "displayName": "Hydra"
+      },
+      {
+        "name": "Masters_Of_Evil_2E",
+        "displayName": "Masters Of Evil"
+      },
+      {
+        "name": "Radiation_2E",
+        "displayName": "Radiation"
+      },
+      {
+        "name": "Sinister_Spider-Foes_2E",
+        "displayName": "Sinister Spider-Foes"
+      },
+      {
+        "name": "Sinister_Syndicate_2E",
+        "displayName": "Sinister Syndicate"
+      },
+      {
+        "name": "Skrulls_2E",
+        "displayName": "Skrulls"
+      }
+    ],
+    "henchmen": [
+      {
+        "name": "Doombot_Legion_2E",
+        "displayName": "Doombot Legion"
+      },
+      {
+        "name": "Hand_Ninjas_2E",
+        "displayName": "Hand Ninjas"
+      },
+      {
+        "name": "Savage_Land_Mutates_2E",
+        "displayName": "Savage Land Mutates"
+      },
+      {
+        "name": "Sentinel_2E",
+        "displayName": "Sentinel"
+      }
+    ],
+    "boards": [
+      {
+        "name": "Hero_2E",
+        "displayName": "Hero"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Bank_Robbery_Hostage_Crisis_2E",
+        "displayName": "Bank Robbery Hostage Crisis",
+        "postRandomization": {
+          "schemeTwists": 9,
+          "villains": {
+            "addExtra": 1
+          }
+        }
+      },
+      {
+        "name": "Enshrouded_Identity_2E",
+        "displayName": "Enshrouded Identity",
+        "postRandomization": {
+          "notes": [
+            "There is no Mastermind yet. Instead, put 3 S.H.I.E.L.D. Officers next to the Mastermind space as \"Bodyguards.\""
+          ],
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 4
+                },
+                "2": {
+                  "schemeTwists": 5
+                },
+                "3": {
+                  "schemeTwists": 6
+                },
+                "4": {
+                  "schemeTwists": 7
+                },
+                "5": {
+                  "schemeTwists": 8
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Negative_Zone_Prison_Breakout_2E",
+        "displayName": "Negative Zone Prison Breakout",
+        "postRandomization": {
+          "villains": {
+            "addExtra": 1
+          },
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 7
+                },
+                "2": {
+                  "schemeTwists": 8
+                },
+                "3": {
+                  "schemeTwists": 9
+                },
+                "4": {
+                  "schemeTwists": 10
+                },
+                "5": {
+                  "schemeTwists": 11
+                }
+              }
+            },
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "bystanders": 5
+                },
+                "2": {
+                  "bystanders": 6
+                },
+                "3": {
+                  "bystanders": 12
+                },
+                "4": {
+                  "bystanders": 12
+                },
+                "5": {
+                  "bystanders": 16
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Portals_To_The_Dark_Dimension_2E",
+        "displayName": "Portals To The Dark Dimension",
+        "postRandomization": {
+          "schemeTwists": 7
+        }
+      },
+      {
+        "name": "Replace_Earths_Leaders_With_Killbots_2E",
+        "displayName": "Replace Earth's Leaders With Killbots",
+        "postRandomization": {
+          "schemeTwists": 10,
+          "notes": [
+            "Stack 1 additional Twist next to this Scheme as a \"Killgorithm.\""
+          ]
+        }
+      },
+      {
+        "name": "Secret_Invasion_Of_The_Skrull_Shapeshifters_2E",
+        "displayName": "Secret Invasion Of The Skrull Shapeshifters",
+        "postRandomization": {
+          "schemeTwists": 6,
+          "villains": {
+            "forceInclude": [
+              "Skrulls_2E"
+            ],
+            "priority": 15
+          },
+          "heroes": {
+            "addExtra": 1
+          },
+          "notes": [
+            "Shuffle 4 random cards from the Hero Deck into the Villain Deck."
+          ]
+        }
+      },
+      {
+        "name": "Superhero_Civil_War_2E",
+        "displayName": "Superhero Civil War",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1-3": {
+                  "schemeTwists": 6
+                },
+                "4-5": {
+                  "schemeTwists": 5
+                }
+              }
+            },
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "2": {
+                  "heroes": {
+                    "set": {
+                      "count": 4
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "The_Legacy_Virus_2E",
+        "displayName": "The Legacy Virus",
+        "postRandomization": {
+          "schemeTwists": 9,
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "wounds": 6
+                },
+                "2": {
+                  "wounds": 12
+                },
+                "3": {
+                  "wounds": 18
+                },
+                "4": {
+                  "wounds": 24
+                },
+                "5": {
+                  "wounds": 30
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Unleash_The_Power_Of_The_Cosmic_Cube_2E",
+        "displayName": "Unleash The Power Of The Cosmic Cube",
+        "postRandomization": {
+          "schemeTwists": 8
+        }
+      }
+    ]
+  }
+}

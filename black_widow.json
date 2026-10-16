@@ -1,0 +1,211 @@
+{
+  "expansion": {
+    "id": "black_widow",
+    "name": "Black Widow",
+    "heroes": [
+      {
+        "name": "Black_Widow_Black_Widow",
+        "displayName": "Black Widow",
+        "team": "S.H.I.E.L.D.",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Yelena_Belova_Black_Widow",
+        "displayName": "Yelena Belova",
+        "team": "S.H.I.E.L.D.",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Red_Guardian_Black_Widow",
+        "displayName": "Red Guardian",
+        "team": "Unaffiliated",
+        "types": [
+          "Covert",
+          "Strength"
+        ]
+      },
+      {
+        "name": "White_Tiger_Black_Widow",
+        "displayName": "White Tiger",
+        "team": "Marvel Knights",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Falcon_And_Winter_Soldier_Black_Widow",
+        "displayName": "Falcon & Winter Soldier",
+        "team": "Avengers",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Strength",
+          "Tech"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Taskmaster_Black_Widow",
+        "displayName": "Taskmaster",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Taskmasters_Thunderbolts_Black_Widow"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Taskmasters_Thunderbolts_Black_Widow"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Indestructible_Man_Black_Widow",
+        "displayName": "Indestructible Man",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Elite_Assassins_Black_Widow"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Elite_Assassins_Black_Widow"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Taskmasters_Thunderbolts_Black_Widow",
+        "displayName": "Taskmaster's Thunderbolts"
+      },
+      {
+        "name": "Elite_Assassins_Black_Widow",
+        "displayName": "Elite Assassins"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Corrupt_The_Spy_Agencies_Black_Widow",
+        "displayName": "Corrupt The Spy Agencies",
+        "postRandomization": {
+          "schemeTwists": 7
+        }
+      },
+      {
+        "name": "Train_Black_Widows_In_The_Red_Room_Black_Widow",
+        "displayName": "Train Black Widows In The Red Room",
+        "postRandomization": {
+          "notes": [
+            "Add 8 S.H.I.E.L.D. Officers to the Villain Deck."
+          ],
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 7
+                },
+                "2": {
+                  "schemeTwists": 6
+                },
+                "3": {
+                  "schemeTwists": 5
+                },
+                "4": {
+                  "schemeTwists": 4
+                },
+                "5": {
+                  "schemeTwists": 3
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sniper_Rifle_Assassins_Black_Widow",
+        "displayName": "Sniper Rifle Assassins",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 10
+                },
+                "2": {
+                  "schemeTwists": 9
+                },
+                "3": {
+                  "schemeTwists": 8
+                },
+                "4": {
+                  "schemeTwists": 7
+                },
+                "5": {
+                  "schemeTwists": 6
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Frame_Heroes_For_Murder_Black_Widow",
+        "displayName": "Frame Heroes For Murder",
+        "postRandomization": {
+          "schemeTwists": 7,
+          "heroes": {
+            "set": {
+              "count": 6
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "expansion": {
+    "id": "marvel_studios_ant_man_and_the_wasp",
+    "name": "Marvel Studios Ant-Man and the Wasp",
+    "heroes": [
+      {
+        "name": "Ant_Army",
+        "displayName": "Ant Army",
+        "team": "Unaffiliated",
+        "types": [
+          "Instinct",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Ant-Man",
+        "displayName": "Ant-Man",
+        "team": "Avengers",
+        "types": [
+          "Covert",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Cassie_Lang",
+        "displayName": "Cassie Lang",
+        "team": "Avengers",
+        "types": [
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Freedom_Fighters",
+        "displayName": "Freedom Fighters",
+        "team": "Unaffiliated",
+        "types": [
+          "Instinct",
+          "Ranged"
+        ]
+      },
+      {
+        "name": "Janet_Van_Dyne",
+        "displayName": "Janet Van Dyne",
+        "team": "Unaffiliated",
+        "types": [
+          "Covert",
+          "Ranged"
+        ]
+      },
+      {
+        "name": "Jentorra",
+        "displayName": "Jentorra",
+        "team": "Unaffiliated",
+        "types": [
+          "Instinct",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Scott_Lang_Cat_Burglar",
+        "displayName": "Scott Lang, Cat Burglar",
+        "team": "Crime Syndicate",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Wasp",
+        "displayName": "Wasp",
+        "team": "Avengers",
+        "types": [
+          "Ranged",
+          "Tech"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Darren_Cross",
+        "displayName": "Darren Cross",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Cross_Technologies"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Cross_Technologies"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ghost_Master_Thief",
+        "displayName": "Ghost, Master Thief",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Ghost_Chasers"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Ghost_Chasers"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Kang_Quantum_Conqueror",
+        "displayName": "Kang, Quantum Conqueror",
+        "postRandomization": {
+          "dynamicNotes": [
+            {
+              "template": "Set aside the Villains from an extra Villain Group ({selectedVillain}) as \"Timeline Variants.\"",
+              "variables": {
+                "selectedVillain": {
+                  "type": "randomUnusedElementOfType",
+                  "elementType": "villains"
+                }
+              }
+            }
+          ],
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Armada_Of_Kang"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Armada_Of_Kang"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Armada_Of_Kang",
+        "displayName": "Armada Of Kang"
+      },
+      {
+        "name": "Cross_Technologies",
+        "displayName": "Cross Technologies"
+      },
+      {
+        "name": "Ghost_Chasers",
+        "displayName": "Ghost Chasers"
+      },
+      {
+        "name": "Quantum_Realm",
+        "displayName": "Quantum Realm"
+      }
+    ],
+    "henchmen": [
+      {
+        "name": "Quantum_Hound",
+        "displayName": "Quantum Hound"
+      },
+      {
+        "name": "Quantumnauts",
+        "displayName": "Quantumnauts"
+      },
+      {
+        "name": "Tardigrade",
+        "displayName": "Tardigrade"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Auction_Shrink_Tech_To_Highest_Bidder",
+        "displayName": "Auction Shrink Tech To Highest Bidder",
+        "postRandomization": {
+          "schemeTwists": 11,
+          "notes": [
+            "Set aside all 14 cards of a random extra Hero that has any Size-Changing cards as \"Shrink Tech.\""
+          ]
+        }
+      },
+      {
+        "name": "Escape_An_Imprisoning_Dimension",
+        "displayName": "Escape An Imprisoning Dimension",
+        "postRandomization": {
+          "schemeTwists": 5
+        }
+      },
+      {
+        "name": "Safeguard_Dark_Secrets",
+        "displayName": "Safeguard Dark Secrets",
+        "postRandomization": {
+          "schemeTwists": 5
+        }
+      },
+      {
+        "name": "Siphon_Energy_From_The_Quantum_Realm",
+        "displayName": "Siphon Energy From The Quantum Realm",
+        "postRandomization": {
+          "schemeTwists": 9,
+          "villains": {
+            "forceExclude": [
+              "Quantum_Realm"
+            ]
+          },
+          "notes": [
+            "Set aside the \"Quantum Realm\" Villain Group as an extra group. Shuffle its Ambush Scheme into the Villain Deck."
+          ]
+        }
+      }
+    ]
+  }
+}

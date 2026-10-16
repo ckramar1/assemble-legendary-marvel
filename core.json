@@ -335,11 +335,13 @@
         "postRandomization": {
           "schemeTwists": 8,
           "bystanders": 12,
-            "boards": {
-                "forceInclude": [
-                    "Hero"
-                ]
-              }
+          "boards": {
+            "forceIncludeMatching": {
+              "matching": [
+                "Hero"
+              ]
+            }
+          }
         },
         "displayName": "Midtown Bank Robbery"
       },
@@ -405,9 +407,11 @@
                     "priority": 15
                   },
                   "boards": {
-                    "forceInclude": [
-                      "Hero"
-                    ],
+                    "forceIncludeMatching": {
+                      "matching": [
+                        "Hero"
+                      ]
+                    },
                     "priority": 10
                   }
                 },
@@ -422,9 +426,11 @@
                     "priority": 15
                   },
                   "boards": {
-                    "forceInclude": [
-                      "Hero"
-                    ],
+                    "forceIncludeMatching": {
+                      "matching": [
+                        "Hero"
+                      ]
+                    },
                     "priority": 10
                   }
                 },
@@ -436,9 +442,11 @@
                     "priority": 15
                   },
                   "boards": {
-                    "forceInclude": [
-                      "Hero"
-                    ],
+                    "forceIncludeMatching": {
+                      "matching": [
+                        "Hero"
+                      ]
+                    },
                     "priority": 10
                   }
                 }

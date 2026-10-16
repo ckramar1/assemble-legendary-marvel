@@ -325,9 +325,11 @@
                         "The Bindings stack holds 5 Bindings per player."
                     ],
                     "boards": {
-                        "forceInclude": [
-                            "Villain"
-                        ],
+                        "forceIncludeMatching": {
+                            "matching": [
+                                "Villain"
+                            ]
+                        },
                         "priority": 5
                     }
                 },
@@ -351,9 +353,11 @@
                         "Put the Thor Adversary next to this Plot."
                     ],
                     "boards": {
-                        "forceInclude": [
-                            "Villain"
-                        ],
+                        "forceIncludeMatching": {
+                            "matching": [
+                                "Villain"
+                            ]
+                        },
                         "priority": 5
                     }
                 },
@@ -383,9 +387,11 @@
                         "Stack 21 Bystanders next to this Plot as \"Infiltrating Spies\"."
                     ],
                     "boards": {
-                        "forceInclude": [
-                            "Villain"
-                        ],
+                        "forceIncludeMatching": {
+                            "matching": [
+                                "Villain"
+                            ]
+                        },
                         "priority": 5
                     }
                 },
@@ -396,9 +402,11 @@
                 "schemeTwists": 8,
                 "postRandomization": {
                     "boards": {
-                        "forceInclude": [
-                            "Villain"
-                        ],
+                        "forceIncludeMatching": {
+                            "matching": [
+                                "Villain"
+                            ]
+                        },
                         "priority": 5
                     },
                     "henchmen": {
@@ -415,9 +423,11 @@
                 "schemeTwists": 8,
                 "postRandomization": {
                     "boards": {
-                        "forceInclude": [
-                            "Villain"
-                        ],
+                        "forceIncludeMatching": {
+                            "matching": [
+                                "Villain"
+                            ]
+                        },
                         "priority": 5
                     }
                 },

@@ -1,0 +1,299 @@
+{
+  "expansion": {
+    "id": "marvel_studios_what_if",
+    "name": "Marvel Studios What If...?",
+    "heroes": [
+      {
+        "name": "Apocalyptic_Black_Widow",
+        "displayName": "Apocalyptic Black Widow",
+        "team": "Guardians Of The Multiverse",
+        "types": [
+          "Covert",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Captain_Carter",
+        "displayName": "Captain Carter",
+        "team": "Guardians Of The Multiverse",
+        "types": [
+          "Instinct",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Doctor_Strange_Supreme",
+        "displayName": "Doctor Strange Supreme",
+        "team": "Guardians Of The Multiverse",
+        "types": [
+          "Instinct",
+          "Ranged"
+        ]
+      },
+      {
+        "name": "Gamora_Destroyer_Of_Thanos",
+        "displayName": "Gamora, Destroyer Of Thanos",
+        "team": "Guardians Of The Multiverse",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Killmonger_Spec_Ops",
+        "displayName": "Killmonger, Spec Ops",
+        "team": "Guardians Of The Multiverse",
+        "types": [
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Party_Thor",
+        "displayName": "Party Thor",
+        "team": "Guardians Of The Multiverse",
+        "types": [
+          "Ranged",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Star-Lord_TChalla",
+        "displayName": "Star-Lord T’Challa",
+        "team": "Guardians Of The Multiverse",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Uatu_The_Watcher",
+        "displayName": "Uatu, The Watcher",
+        "team": "Guardians Of The Multiverse",
+        "types": [
+          "Covert",
+          "Ranged"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Hank_Pym_Yellowjacket",
+        "displayName": "Hank Pym, Yellowjacket"
+      },
+      {
+        "name": "Killmonger_The_Betrayer",
+        "displayName": "Killmonger, The Betrayer",
+        "postRandomization": {
+          "heroes": {
+            "forceIncludeMatching": {
+              "matching": [
+                "Killmonger"
+              ]
+            },
+            "priority": 10
+          },
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "henchmen": {
+                    "forceExclude": [
+                      "Vibranium_Liberator_Drones"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "henchmen": {
+                    "forceInclude": [
+                      "Vibranium_Liberator_Drones"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Ultron_Infinity",
+        "displayName": "Ultron Infinity",
+        "postRandomization": {
+          "henchmen": {
+            "forceInclude": [
+              "Ultron_Sentries"
+            ],
+            "priority": 10
+          }
+        }
+      },
+      {
+        "name": "Zombie_Scarlet_Witch",
+        "displayName": "Zombie Scarlet Witch",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Zombie_Avengers"
+                    ],
+                    "priority": 10
+                  },
+                  "notes": [
+                    "In solo mode, if using another Villain Group, add \"Zombie\" to their card names and they all get Ambush: Rise of the Living Dead."
+                  ]
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Zombie_Avengers"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Black_Order_Guards",
+        "displayName": "Black Order Guards"
+      },
+      {
+        "name": "Intergalactic_Party_Animals",
+        "displayName": "Intergalactic Party Animals"
+      },
+      {
+        "name": "Rival_Overlords",
+        "displayName": "Rival Overlords"
+      },
+      {
+        "name": "Stranges_Demons",
+        "displayName": "Strange’s Demons"
+      },
+      {
+        "name": "Zombie_Avengers",
+        "displayName": "Zombie Avengers"
+      }
+    ],
+    "henchmen": [
+      {
+        "name": "Giants_Of_Jotunheim",
+        "displayName": "Giants Of Jotunheim"
+      },
+      {
+        "name": "Ultron_Sentries",
+        "displayName": "Ultron Sentries"
+      },
+      {
+        "name": "Vibranium_Liberator_Drones",
+        "displayName": "Vibranium Liberator Drones"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Breach_The_Nexus_Of_All_Realities",
+        "displayName": "Breach The Nexus Of All Realities",
+        "postRandomization": {
+          "schemeTwists": 0,
+          "notes": [
+            "Stack each Villain Group separately face down as its own \"Reality.\" Add 2 Twists to each Reality.",
+            "Shuffle together all the Henchmen, Master Strikes, and Bystanders for your player count and randomly distribute them amongst all the Realities, as evenly as possible. Shuffle each Reality separately."
+          ],
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1-2": {
+                  "villains": {
+                    "set": {
+                      "count": 3
+                    },
+                    "priority": 5
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Collect_An_Interstellar_Zoo",
+        "displayName": "Collect An Interstellar Zoo",
+        "postRandomization": {
+          "schemeTwists": 11
+        }
+      },
+      {
+        "name": "Marvel_Zombies",
+        "displayName": "Marvel Zombies",
+        "postRandomization": {
+          "schemeTwists": 4,
+          "villains": {
+            "forceInclude": [
+              "Zombie_Avengers"
+            ],
+            "priority": 15
+          },
+          "dynamicNotes": [
+            {
+              "template": "Add 8 random cards from an extra Hero ({extraHero}) to the Villain Deck.",
+              "variables": {
+                "extraHero": {
+                  "type": "randomUnusedElementOfType",
+                  "elementType": "heroes"
+                }
+              }
+            }
+          ],
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "bystanders": 4
+                },
+                "2": {
+                  "bystanders": 5
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Trash_Earth_With_Hugest_Party_Ever",
+        "displayName": "Trash Earth With Hugest Party Ever",
+        "postRandomization": {
+          "schemeTwists": 6,
+          "heroes": {
+            "forceInclude": [
+              "Party_Thor"
+            ],
+            "priority": 15
+          },
+          "villains": {
+            "forceInclude": [
+              "Intergalactic_Party_Animals"
+            ],
+            "priority": 15
+          }
+        }
+      }
+    ]
+  }
+}

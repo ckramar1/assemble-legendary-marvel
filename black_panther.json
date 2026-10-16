@@ -1,0 +1,182 @@
+{
+  "expansion": {
+    "id": "black_panther",
+    "name": "Black Panther",
+    "heroes": [
+      {
+        "name": "King_Black_Panther",
+        "displayName": "King Black Panther",
+        "team": "Heroes Of Wakanda",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Queen_Storm_Of_Wakanda",
+        "displayName": "Queen Storm Of Wakanda",
+        "team": "Heroes Of Wakanda",
+        "types": [
+          "Covert",
+          "Ranged"
+        ]
+      },
+      {
+        "name": "General_Okoye",
+        "displayName": "General Okoye",
+        "team": "Heroes Of Wakanda",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Princess_Shuri",
+        "displayName": "Princess Shuri",
+        "team": "Heroes Of Wakanda",
+        "types": [
+          "Instinct",
+          "Ranged",
+          "Tech"
+        ]
+      },
+      {
+        "name": "White_Wolf",
+        "displayName": "White Wolf",
+        "team": "Heroes Of Wakanda",
+        "types": [
+          "Covert",
+          "Tech"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Killmonger",
+        "displayName": "Killmonger",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Killmongers_League"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Killmongers_League"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Klaw",
+        "displayName": "Klaw",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Enemies_Of_Wakanda"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Enemies_Of_Wakanda"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Killmongers_League",
+        "displayName": "Killmonger's League"
+      },
+      {
+        "name": "Enemies_Of_Wakanda",
+        "displayName": "Enemies Of Wakanda"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Seize_The_Wakandan_Throne",
+        "displayName": "Seize The Wakandan Throne",
+        "postRandomization": {
+          "schemeTwists": 6
+        }
+      },
+      {
+        "name": "Poison_Lakes_With_Nanite_Microbots",
+        "displayName": "Poison Lakes With Nanite Microbots",
+        "postRandomization": {
+          "notes": [
+            "30 Wounds in the Wound Stack."
+          ],
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 6
+                },
+                "2": {
+                  "schemeTwists": 7
+                },
+                "3": {
+                  "schemeTwists": 8
+                },
+                "4": {
+                  "schemeTwists": 9
+                },
+                "5": {
+                  "schemeTwists": 10
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Plunder_Wakandas_Vibranium",
+        "displayName": "Plunder Wakanda's Vibranium",
+        "postRandomization": {
+          "schemeTwists": 10
+        }
+      },
+      {
+        "name": "Provoke_A_Clash_Of_Nations",
+        "displayName": "Provoke A Clash Of Nations",
+        "postRandomization": {
+          "schemeTwists": 11
+        }
+      }
+    ]
+  }
+}

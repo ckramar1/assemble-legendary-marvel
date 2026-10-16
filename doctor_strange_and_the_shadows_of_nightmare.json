@@ -1,0 +1,184 @@
+{
+  "expansion": {
+    "id": "doctor_strange_and_the_shadows_of_nightmare",
+    "name": "Doctor Strange And The Shadows Of Nightmare",
+    "heroes": [
+      {
+        "name": "Doctor_Strange_Shadows_of_Nightmare",
+        "displayName": "Doctor Strange",
+        "team": "Avengers",
+        "types": [
+          "Instinct",
+          "Ranged"
+        ]
+      },
+      {
+        "name": "Clea_Shadows_of_Nightmare",
+        "displayName": "Clea",
+        "team": "Marvel Knights",
+        "types": [
+          "Covert",
+          "Ranged"
+        ]
+      },
+      {
+        "name": "Doctor_Voodoo_Shadows_of_Nightmare",
+        "displayName": "Doctor Voodoo",
+        "team": "Avengers",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "The_Ancient_One_Shadows_of_Nightmare",
+        "displayName": "The Ancient One",
+        "team": "Unaffiliated",
+        "types": [
+          "Covert",
+          "Instinct"
+        ]
+      },
+      {
+        "name": "The_Vishanti_Shadows_of_Nightmare",
+        "displayName": "The Vishanti",
+        "team": "Unaffiliated",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Ranged",
+          "Strength"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Dormammu_Shadows_of_Nightmare",
+        "displayName": "Dormammu",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Lords_Of_The_Netherworld_Shadows_of_Nightmare"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Lords_Of_The_Netherworld_Shadows_of_Nightmare"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Nightmare_Shadows_of_Nightmare",
+        "displayName": "Nightmare",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Fear_Lords_Shadows_of_Nightmare"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Fear_Lords_Shadows_of_Nightmare"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Lords_Of_The_Netherworld_Shadows_of_Nightmare",
+        "displayName": "Lords Of The Netherworld"
+      },
+      {
+        "name": "Fear_Lords_Shadows_of_Nightmare",
+        "displayName": "Fear Lords"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Claim_Souls_For_Demons_Shadows_of_Nightmare",
+        "displayName": "Claim Souls For Demons",
+        "postRandomization": {
+          "schemeTwists": 8
+        }
+      },
+      {
+        "name": "War_For_The_Dream_Dimension_Shadows_of_Nightmare",
+        "displayName": "War For The Dream Dimension",
+        "postRandomization": {
+          "schemeTwists": 7,
+          "villains": {
+            "addExtra": 1
+          }
+        }
+      },
+      {
+        "name": "Cursed_Pages_Of_The_Darkhold_Tome_Shadows_of_Nightmare",
+        "displayName": "Cursed Pages Of The Darkhold Tome",
+        "postRandomization": {
+          "schemeTwists": 11,
+          "villains": {
+            "addExtra": 1
+          }
+        }
+      },
+      {
+        "name": "Duels_Of_Science_And_Magic_Shadows_of_Nightmare",
+        "displayName": "Duels Of Science And Magic",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 10
+                },
+                "2": {
+                  "schemeTwists": 9
+                },
+                "3": {
+                  "schemeTwists": 11
+                },
+                "4": {
+                  "schemeTwists": 10
+                },
+                "5": {
+                  "schemeTwists": 11
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "expansion": {
+    "id": "2099",
+    "name": "2099",
+    "heroes": [
+      {
+        "name": "Doctor_Doom_2099",
+        "displayName": "Doctor Doom 2099",
+        "team": "Unaffiliated",
+        "types": [
+          "Ranged",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Ghost_Rider_2099",
+        "displayName": "Ghost Rider 2099",
+        "team": "Marvel Knights",
+        "types": [
+          "Covert",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Hulk_2099",
+        "displayName": "Hulk 2099",
+        "team": "Marvel Knights",
+        "types": [
+          "Instinct",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Ravage_2099",
+        "displayName": "Ravage 2099",
+        "team": "Marvel Knights",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Spider-Man_2099",
+        "displayName": "Spider-Man 2099",
+        "team": "Spider Friends",
+        "types": [
+          "Covert",
+          "Instinct",
+          "Strength"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Alchemax_Executives",
+        "displayName": "Alchemax Executives",
+        "postRandomization": {
+          "heroes": {
+            "addExtra": 1
+          },
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Alchemax_Enforcers"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Alchemax_Enforcers"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sinister_Six_2099",
+        "displayName": "Sinister Six 2099",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExcludeMatching": {
+                      "matching": [
+                        "Alchemax",
+                        "Sinister"
+                      ]
+                    },
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceIncludeMatching": {
+                      "matching": [
+                        "Alchemax",
+                        "Sinister"
+                      ]
+                    },
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Alchemax_Enforcers",
+        "displayName": "Alchemax Enforcers"
+      },
+      {
+        "name": "False_Aesir_Of_Alchemax",
+        "displayName": "False Aesir Of Alchemax"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Become_President_Of_The_United_States",
+        "displayName": "Become President Of The United States",
+        "postRandomization": {
+          "boards": {
+            "forceIncludeMatching": {
+              "matching": [
+                "Hero"
+              ]
+            }
+          },
+          "schemeTwists": 11
+        }
+      },
+      {
+        "name": "Befoul_Earth_Into_A_Polluted_Wasteland",
+        "displayName": "Befoul Earth Into A Polluted Wasteland",
+        "postRandomization": {
+          "schemeTwists": 8,
+          "heroes": {
+            "addExtra": 1
+          }
+        }
+      },
+      {
+        "name": "Pull_Reality_Into_Cyberspace",
+        "displayName": "Pull Reality Into Cyberspace",
+        "postRandomization": {
+          "schemeTwists": 7
+        }
+      },
+      {
+        "name": "Subjugate_Earth_With_Mega-Corporations",
+        "displayName": "Subjugate Earth With Mega-Corporations",
+        "postRandomization": {
+          "schemeTwists": 11,
+          "heroes": {
+            "addExtra": 1
+          }
+        }
+      }
+    ]
+  }
+}

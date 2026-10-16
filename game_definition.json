@@ -294,6 +294,10 @@
               "iconData": "team-icons/gotg192.png",
               "type": "asset"
             },
+            "Guardians Of The Galaxy/Unaffiliated": {
+              "iconData": "team-icons/gotg192.png",
+              "type": "asset"
+            },
             "Inhumans": {
               "iconData": "team-icons/inhumans192.png",
               "type": "asset"
@@ -314,7 +318,7 @@
               "iconData": "team-icons/heroesofasgard192.png",
               "type": "asset"
             },
-            "Heroes of Wakanda": {
+            "Heroes Of Wakanda": {
               "iconData": "team-icons/heroesofwakanda192.png",
               "type": "asset"
             },
@@ -344,6 +348,10 @@
             },
             "Foes Of Asgard": {
               "iconData": "team-icons/foesofasgard192.png",
+              "type": "asset"
+            },
+            "Guardians Of The Multiverse": {
+              "iconData": "team-icons/guardiansofthemultiverse192.png",
               "type": "asset"
             },
             "Unaffiliated": {

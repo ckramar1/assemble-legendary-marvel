@@ -1,0 +1,199 @@
+{
+  "expansion": {
+    "id": "midnight_sons",
+    "name": "Midnight Sons",
+    "heroes": [
+      {
+        "name": "Blade_Daywalker",
+        "displayName": "Blade, Daywalker",
+        "team": "Marvel Knights",
+        "types": [
+          "Instinct",
+          "Strength",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Elsa_Bloodstone",
+        "displayName": "Elsa Bloodstone",
+        "team": "Marvel Knights",
+        "types": [
+          "Instinct",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Morbius",
+        "displayName": "Morbius",
+        "team": "Marvel Knights",
+        "types": [
+          "Covert",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Werewolf_By_Night",
+        "displayName": "Werewolf By Night",
+        "team": "Marvel Knights",
+        "types": [
+          "Instinct",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Wong_Master_Of_The_Mystic_Arts",
+        "displayName": "Wong, Master Of The Mystic Arts",
+        "team": "Marvel Knights",
+        "types": [
+          "Covert",
+          "Ranged"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Lilith_Mother_Of_Demons",
+        "displayName": "Lilith, Mother Of Demons",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Lilin"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Lilin"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Zarathos",
+        "displayName": "Zarathos",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Fallen"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Fallen"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Fallen",
+        "displayName": "Fallen"
+      },
+      {
+        "name": "Lilin",
+        "displayName": "Lilin"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Midnight_Massacre",
+        "displayName": "Midnight Massacre",
+        "postRandomization": {
+          "schemeTwists": 11,
+          "notes": [
+            "Add all 14 cards for any Blade Hero to the Villain Deck."
+          ]
+        }
+      },
+      {
+        "name": "Ritual_Sacrifice_To_Summon_Chthon",
+        "displayName": "Ritual Sacrifice To Summon Chthon",
+        "postRandomization": {
+          "villains": {
+            "addExtra": 1,
+            "forceInclude": [
+              "Lilin"
+            ],
+            "priority": 15
+          },
+          "notes": [
+            "The extra Villain Group must be Lilin.",
+            "If using Lilith: use 1 Twist total, and still use an extra Villain Group."
+          ],
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 7
+                },
+                "2": {
+                  "schemeTwists": 8
+                },
+                "3": {
+                  "schemeTwists": 9
+                },
+                "4": {
+                  "schemeTwists": 10
+                },
+                "5": {
+                  "schemeTwists": 11
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sire_Vampires_At_The_Blood_Bank",
+        "displayName": "Sire Vampires At The Blood Bank",
+        "postRandomization": {
+          "schemeTwists": 10,
+          "henchmen": {
+            "addExtra": 1
+          },
+          "notes": [
+            "The extra Henchman Group is 10 cards, as \"Vampire Neonates.\"",
+            "Put this Scheme above the Bank to mark it as the \"Blood Bank.\""
+          ]
+        }
+      },
+      {
+        "name": "Wager_At_Blackjack_For_Heroes_Souls",
+        "displayName": "Wager At Blackjack For Heroes' Souls",
+        "postRandomization": {
+          "schemeTwists": 11,
+          "heroes": {
+            "addExtra": 2
+          }
+        }
+      }
+    ]
+  }
+}

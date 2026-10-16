@@ -1,0 +1,195 @@
+{
+  "expansion": {
+    "id": "weapon_x",
+    "name": "Weapon X",
+    "heroes": [
+      {
+        "name": "Fantomex",
+        "displayName": "Fantomex",
+        "team": "X-Force",
+        "types": [
+          "Covert",
+          "Ranged",
+          "Tech"
+        ]
+      },
+      {
+        "name": "Marrow",
+        "displayName": "Marrow",
+        "team": "X-Force",
+        "types": [
+          "Covert",
+          "Ranged",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Weapon_H",
+        "displayName": "Weapon H",
+        "team": "Avengers",
+        "types": [
+          "Instinct",
+          "Strength"
+        ]
+      },
+      {
+        "name": "Weapon_X_Wolverine",
+        "displayName": "Weapon X (Wolverine)",
+        "team": "Marvel Knights",
+        "types": [
+          "Instinct",
+          "Tech"
+        ]
+      }
+    ],
+    "masterminds": [
+      {
+        "name": "Omega_Red",
+        "displayName": "Omega Red"
+      },
+      {
+        "name": "Romulus",
+        "displayName": "Romulus",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Weapon_Plus"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Weapon_Plus"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sabretooth_Weapon_X",
+        "displayName": "Sabretooth",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "villains": {
+                    "forceExclude": [
+                      "Berserkers"
+                    ],
+                    "priority": 10
+                  }
+                },
+                "2-5": {
+                  "villains": {
+                    "forceInclude": [
+                      "Berserkers"
+                    ],
+                    "priority": 10
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "villains": [
+      {
+        "name": "Berserkers",
+        "displayName": "Berserkers"
+      },
+      {
+        "name": "Weapon_Plus",
+        "displayName": "Weapon Plus"
+      }
+    ],
+    "schemes": [
+      {
+        "name": "Condition_Logan_Into_Weapon_X",
+        "displayName": "Condition Logan Into Weapon X",
+        "postRandomization": {
+          "schemeTwists": 8,
+          "heroes": {
+            "forceIncludeMatching": {
+              "matching": [
+                "Wolverine",
+                "Logan"
+              ]
+            },
+            "priority": 15
+          }
+        }
+      },
+      {
+        "name": "Go_After_Heroes_Loved_Ones",
+        "displayName": "Go After Heroes' Loved Ones",
+        "postRandomization": {
+          "heroes": {
+            "addExtra": 1
+          },
+          "notes": [
+            "Don't use multiple Heroes that have the same Hero Name.",
+            "Set aside a lowest-cost card for each Hero Name, face up, with 2 face up Bystanders under it as \"Loved Ones.\""
+          ],
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 8
+                },
+                "2-4": {
+                  "schemeTwists": 10
+                },
+                "5": {
+                  "schemeTwists": 11
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Wipe_Heroes_Memories",
+        "displayName": "Wipe Heroes' Memories",
+        "postRandomization": {
+          "conditionalRules": [
+            {
+              "parameter": "numberOfPlayers",
+              "conditions": {
+                "1": {
+                  "schemeTwists": 5
+                },
+                "2": {
+                  "schemeTwists": 6
+                },
+                "3": {
+                  "schemeTwists": 7
+                },
+                "4": {
+                  "schemeTwists": 8
+                },
+                "5": {
+                  "schemeTwists": 9
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
